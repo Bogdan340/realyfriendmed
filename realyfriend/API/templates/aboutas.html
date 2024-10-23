@@ -1,0 +1,35 @@
+<div class="container-content-aboutas-page">
+    <header class="header">
+        <div class="info-company">
+            <h1 class="info-company__name-company">Вет. клиника "{{ nameCompany }}"</h1>
+            <h2 class="info-company__slogan-company">{{ sloganCompany }}</h2>
+        </div>
+        <nav class="navigation-panel">
+            <a class="navigation-panel__link" id="main-page-link">Главная</a>
+            <a class="navigation-panel__link this_page" id="aboutas-page-link">О нас</a>
+            <a class="navigation-panel__link" id="services-page-link">Услуги</a>
+            <a class="navigation-panel__link" id="reviews-page-link">Отзывы</a>
+            {% if user.is_superuser %}
+            <a class="navigation-panel__link" href="/adminpanel">Панель админа</a>
+            {% endif %}
+        </nav>
+        <div class="wrapper-city-company"> 
+            <h3 class="wrapper-city-company__name-city"> {{ cityCompany }}</h3>
+        </div>
+    </header>
+    <div class="content-page">
+        <div class="wrapper-content">
+            <div class="wrapper-img-aboutas-page">
+                {% load static %}
+                <img class="wrapper-img-aboutas-page__img " src="{% static 'img/image1.jpg' %}" alt="">
+            </div>
+            <div class="text-content">
+                <h1 class="text-content__header-text">Вы можете найти нас<br>по следушим адресам</h1>
+                <br>
+                {% autoescape off %}
+                    {{ addressHtml }}
+                {% endautoescape %}
+            </div>
+        </div>
+    </div>
+</div>

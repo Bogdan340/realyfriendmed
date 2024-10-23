@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+.btn {
+  background-color: white;
+  font-family: "Montserrat";
+  color: black;
+  font-weight: 500;
+  font-size: 1.4vw;
+  outline: 0;
+  border: 0;
+  width: 21.25vw;
+  height: 7dvh;
+  border-radius: 18px;
+  padding: 0.5vw;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  border: 0.3vw white solid;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s;
+}
+
+.loading-container-div {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+}
+.loading-container-div__animation {
+  width: 100%;
+  height: 100%;
+}
+
+.content-page {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 90.8vh;
+}
+
+.wrapper-animation {
+  width: 23.3vw;
+  height: 20vw;
+  transform: rotateY(180deg);
+}
+
+.inp {
+  outline: 0;
+  border: 0.2vw #fb8500 solid;
+  background-color: white;
+  width: 6vw;
+  height: 4.5vh;
+  border-radius: 0.6vw;
+  text-align: center;
+  font-family: "Montserrat";
+  color: black;
+  font-weight: 500;
+}
+
+.services-sign {
+  position: absolute;
+  left: 35vw;
+  top: 10vh;
+  width: 30vw;
+  height: 90vh;
+  background-color: black;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+.services-sign h1, .services-sign h2 {
+  font-family: "Montserrat";
+  color: white;
+}

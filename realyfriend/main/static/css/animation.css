@@ -1,0 +1,41 @@
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes attenuation {
+  0% {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+  100% {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+}
+.appearance-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: appearance 1s linear;
+  opacity: 1;
+}
+
+.attenuation-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: attenuation 1s linear;
+  opacity: 0;
+}

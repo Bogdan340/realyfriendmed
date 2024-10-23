@@ -1,0 +1,1 @@
+start ./.venv/Scripts/python ./realyfriend/manage.py runserver

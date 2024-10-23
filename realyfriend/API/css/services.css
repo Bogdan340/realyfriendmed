@@ -1,0 +1,65 @@
+.container-content-services-page {
+  width: 100%;
+  min-height: 100%;
+  background: #fb8500;
+}
+
+.content-page {
+  align-items: baseline;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 74vw;
+  margin-left: 13vw;
+  border-radius: 1vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.service-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1vw;
+  margin-top: 3vh;
+}
+.service-container__name {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-left: 5vw;
+}
+.service-container__price {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-right: 1vw;
+}
+
+.right-content {
+  margin-right: 5vw;
+}
+
+.service-container:last-child {
+  margin-bottom: 3vh;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+  width: 85%;
+  justify-content: space-around;
+}

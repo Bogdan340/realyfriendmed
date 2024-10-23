@@ -1,0 +1,41 @@
+<div class="container-content-services-page">
+    <header class="header">
+        <div class="info-company">
+            <h1 class="info-company__name-company">Вет. клиника "{{ nameCompany }}"</h1>
+            <h2 class="info-company__slogan-company">{{ sloganCompany }}</h2>
+        </div>
+        <nav class="navigation-panel">
+            <a class="navigation-panel__link" id="main-page-link">Главная</a>
+            <a class="navigation-panel__link" id="aboutas-page-link">О нас</a>
+            <a class="navigation-panel__link this_page" id="services-page-link">Услуги</a>
+            <a class="navigation-panel__link" id="reviews-page-link">Отзывы</a>
+            {% if user.is_superuser %}
+            <a class="navigation-panel__link" href="/adminpanel">Панель админа</a>
+            {% endif %}
+        </nav>
+        <div class="wrapper-city-company"> 
+            <h3 class="wrapper-city-company__name-city"> {{ cityCompany }}</h3>
+        </div>
+    </header>
+    <div class="content-page">
+        <div class="services" id="parent-services">
+            <div class="filter-container">
+                <div class="filter-categore">
+                    <button class="btn small_btn" id="button-filter-price" onclick="priceFilterButtonFunction()">По возрастанию цены</button>
+                    <input type="number" class="inp margin-left-first" id="from" placeholder="ОТ">
+                    <input type="number" class="inp margin-left-first" id="to" placeholder="ДО">
+                </div>
+                <div class="container">
+                    <button class="btn small_btn" onclick="loadServices('', false, true)">Сбросить фильтр</button>
+                    <button class="btn small_btn" onclick="loadServices(up ? 'minToMaxPrice' : 'maxToMinPrice', false, false)">Применить</button>
+                </div>
+            </div>
+            <div id="container-services">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        console.log("log");
+    </script>
+</div>
